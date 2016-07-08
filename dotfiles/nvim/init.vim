@@ -100,6 +100,7 @@ set formatoptions+=rwn1
 set formatoptions-=t
 set formatoptions-=c
 syntax on
+set rnu
 set number
 set mouse=n " Mouse is for scrolling in normal mode only.
 set scrolloff=999 " Enable side-scroller editing.

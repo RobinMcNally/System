@@ -1,0 +1,84 @@
+[options]
+
+font = Luxi Mono Regular 17px
+[colors]
+
+
+[colors]
+
+# special
+foreground      = #fff0e5
+foreground_bold = #fff0e5
+cursor          = #fff0e5
+background = rgba(22,22,22,.80)
+
+
+# black
+color0  = #202020
+color8  = #525252
+
+# red
+color1  = #b91e2e
+color9  = #bf3134
+
+# green
+color2  = #394636
+color10 = #a4b19a
+
+# yellow
+color3  = #f9bb80
+color11 = #fae3a0
+
+# blue
+color4  = #426f82
+color12 = #5b9ec4
+
+# magenta
+color5  = #2d2031
+color13 = #87314e
+
+# cyan
+color6  = #0b3452
+color14 = #1acff9
+
+# white
+color7  = #a2a2a2
+color15 = #ffefd7
+
+
+# special
+foreground      = #fff0e5
+foreground_bold = #fff0e5
+cursor          = #fff0e5
+
+# black
+color0  = #202020
+color8  = #525252
+
+# red
+color1  = #b91e2e
+color9  = #bf3134
+
+# green
+color2  = #3f942b
+color10 = #83c153
+
+# yellow
+color3  = #f9bb80
+color11 = #fae3a0
+
+# blue
+color4  = #3f7b94
+color12 = #60baed
+
+# magenta
+color5  = #8a183d
+color13 = #87314e
+
+# cyan
+color6  = #1b6ca8
+color14 = #25a4c2
+
+# white
+color7  = #a29582
+color15 = #ffefd7
