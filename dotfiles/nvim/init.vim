@@ -113,6 +113,10 @@ set showbreak=↪\
 set linebreak
 set sidescroll=5
 
+if has('nvim')
+    let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+endif
+
 " Setting up listchars
 set list
 set listchars+=precedes:<
@@ -234,7 +238,6 @@ if !has('nvim')
     " neovim will automatically create the swap directory, but vim will not.
     silent !mkdir -p "$XDG_DATA_HOME/nvim/swap" 
 endif
-
 """""""""""""""
 " Workarounds "
 """""""""""""""
