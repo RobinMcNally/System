@@ -112,8 +112,17 @@ colorscheme later-this-evening
 set showbreak=↪\ 
 set linebreak
 set sidescroll=5
+
+" Setting up listchars
+set list
 set listchars+=precedes:<
 set listchars+=extends:>
+set listchars+=tab:\|\ 
+set listchars+=trail:•
+set listchars+=space:⋅
+
+" sets listchars backgrount to terminal gray
+hi NonText ctermfg=7 guifg=gray
 
 if has('patch-7.2.315') " Ensure breakindent is around.
     set breakindent
@@ -209,18 +218,18 @@ map <RightRelease> <Nop>
 """"""""""""""""
 
 if !has('nvim')
-	set directory=$XDG_DATA_HOME/nvim/swap//
-	set backupdir=.,$XDG_DATA_HOME/nvim/backup
-	set viminfo+=n$XDG_DATA_HOME/nvim/shada/viminfo
+    set directory=$XDG_DATA_HOME/nvim/swap//
+    set backupdir=.,$XDG_DATA_HOME/nvim/backup
+    set viminfo+=n$XDG_DATA_HOME/nvim/shada/viminfo
 
-	set nocompatible
-	set wildmenu
-	set incsearch
-	set hlsearch
+    set nocompatible
+    set wildmenu
+    set incsearch
+    set hlsearch
     set linebreak
 
     " neovim understands bracketed pastes, so this is only needed here.
-	nnoremap <Leader>tp :set paste! paste?<CR>
+    nnoremap <Leader>tp :set paste! paste?<CR>
 
     " neovim will automatically create the swap directory, but vim will not.
     silent !mkdir -p "$XDG_DATA_HOME/nvim/swap" 

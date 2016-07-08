@@ -1,20 +1,15 @@
 # Dotfiles and Dotfile Accessories
 
 ## What is?
-This is where I keep my configuration for (nearly) everything. Eventually I hope to get rid of the (nearly), but some software is just not very cooperative.
+This is where I keep my configuration that I heartlessly stole from Vil.
 
-I use this configuration nearly exclusively on OS X, but I do have it on a few Linux servers.
+I'm primarily on some flavor of linux running the i3 window manager
 
 ## How do?
-If you want to use these dotfiles, I'd recommend forking the repo and making any changes that you would like, first.
-If you do want to install this as-is, it's as easy as:
-```
-cd ~ # (or wherever you would like to keep it)
-git clone https://github.com/vilhalmer/System
-System/sys-manage link
-```
 
-This will symlink everything into place, renaming any existing dotfiles with .back to preserve them. See the section on `sys-manage` below for more stuff it can do.
+Go start with Vil's updated repo it's actually up to date
+
+git clone https://github.com/vilhalmer/System
 
 ## What's included?
 ### .profile
@@ -57,12 +52,11 @@ My tmux configuration generally assumes that you're on whatever version is lates
 - On OS X, the statusline contains a battery indicator. I'd like to get this working on Linux eventually as well. It currently doesn't check to see if the system actually HAS a battery, so you may have to kill it with fire on desktop machines.
 
 ### git
-Originally, this repo contained my git [user] section. After several incidents with people using this config and committing things as me (read the config, dammit), I removed it. It should be placed in ~/.gitconfig instead, which is not included in the repo. Anything in that file overrides anything in $XDG_CONFIG_HOME.
-- I use `push.default = simple`.
+I once committed as Vil....
 
 ### Later This Evening
-I use a custom-designed, one-of-a-kind bespoke (sorry) color scheme that I derived from Tomorrow Night Eighties, called Later This Evening. There are Terminal.app and iTerm 2 versions included, and you are likely to find that some stuff is unreadable if you don't use them. Some of the mappings are… strange. I've been slowly working to fix this, since I do occasionally use my config in places where I can't install them, but it's not a high priority.
-If I ever start using a Linux terminal on a regular basis, I'll add a version for it as well.
+
+I'm probably going to swap away from this color scheme sooner or later. No disrespect, I just need to be my own bear.
 
 ## sys-manage
 `sys-manage` is the primary way to interact with my configuration. It's in need of a bit of cleanup, but works fairly well. Here are the commands it supports:
@@ -77,9 +71,6 @@ If I ever start using a Linux terminal on a regular basis, I'll add a version fo
     - **revert**: Unlinks everything, and restores any .back files that **link** created.
     - **import**: Adds the specified dotfiles to the repository and links them back to their original location. I usually just do this manually, so this doesn't get a lot of testing. It may be removed in the future.
     - **pull**: An alias for `git pull origin master`. I'm in the middle of expanding its functionality to including automatic rebasing when other branches are checked out, to allow for the creation of machine-specific branches.
-
-## Wrap-up
-Feel free to open issues, and I will try to fix them if I have a way to reproduce them. I like to know when things are broken, because I'm likely to run into the same problem eventually (if I haven't already).
 
 That's it for now. I hope you found something useful! 
 
