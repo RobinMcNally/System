@@ -215,3 +215,4 @@ chpwd () {
 is_available keychain && eval $(keychain --quiet --eval id_ed25519)
 
 name_tmux_window
+export PATH=/usr/local/heroku/bin:$PATH
