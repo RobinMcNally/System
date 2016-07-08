@@ -30,6 +30,11 @@ let g:localvimrc_ask = 0
 " NERDTree
 
 let g:NERDTreeWinSize = 40
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeStatusline = 0
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeAutoCenter = 1
+let g:NERDTreeAutoCenterThreshold = 9999
 
 " Syntastic
 
