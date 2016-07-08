@@ -129,20 +129,22 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bar {
-    colors{
-        background       #161616
-        statusline       #ffffff
-        separator        #cccccc
+# Trying life without a bar for a bit
 
-        focused_workspace #ff944d #e65c00 #ffffff
-    }
-
-    # Using conky for output
-    status_command $HOME/.config/i3/conkyscript.sh
-    position top
-    separator_symbol " "
-}
+#bar {
+#    colors{
+#        background       #161616
+#        statusline       #ffffff
+#        separator        #cccccc
+#
+#        focused_workspace #ff944d #e65c00 #ffffff
+#    }
+#
+#    # Using conky for output
+#    status_command $HOME/.config/i3/conkyscript.sh
+#    position top
+#    separator_symbol " "
+#}
 
 # Change system volume
 

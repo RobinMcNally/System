@@ -3,7 +3,7 @@
 " I N I T . V I M
 "
 " “ 𝘞𝘩𝘦𝘳𝘦 𝘴𝘱𝘢𝘳𝘦 𝘵𝘪𝘮𝘦 𝘨𝘰𝘦𝘴 𝘵𝘰 𝘥𝘪𝘦.™ ”
-
+"
 """""""""""""""""""""
 " Environment setup "
 """""""""""""""""""""
@@ -65,7 +65,8 @@ Plug 'tpope/vim-surround'
 Plug 'wesQ3/vim-windowswap'
 
 if has('nvim')
-Plug 'Shougo/deoplete.nvim', { 'tag': '*' }
+    Plug 'Shougo/deoplete.nvim', { 'tag': '*' }
+    let g:deoplete#enable_at_startup = 1
 endif
 
 " Syntax

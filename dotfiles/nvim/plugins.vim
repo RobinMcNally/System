@@ -16,10 +16,6 @@ nnoremap <silent> <Leader>, :Unite -no-split -start-insert -auto-preview buffer:
 
 " deoplete
 
-if exists("*DeopleteEnable")
-    DeopleteEnable
-endif
-
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " localvimrc
