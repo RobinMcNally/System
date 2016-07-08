@@ -63,6 +63,7 @@ Plug 'tweekmonster/braceless.vim', { 'tag': '*' }
 Plug 'guns/xterm-color-table.vim'
 Plug 'tpope/vim-surround'
 Plug 'wesQ3/vim-windowswap'
+Plug 'terryma/vim-smooth-scroll'
 
 if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'tag': '*' }
@@ -196,6 +197,14 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <C-b> <S-Left>
 cnoremap <C-f> <S-Right>
+
+
+inoremap jk <Esc>
+
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll/2, 0, 1)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll/2, 0, 1)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 " Terminal
 tnoremap <Esc> <C-\><C-n>
