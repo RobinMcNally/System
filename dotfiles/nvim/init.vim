@@ -147,8 +147,8 @@ set backspace=2
 set ignorecase
 set smartcase
 
-" Sync the unnamed register with the system clipboard.
-set clipboard^=unnamed
+" Sync the + register with the system clipboard.
+set clipboard=unnamedplus
 
 """"""""""""
 " Commands "
@@ -171,6 +171,9 @@ command! Tq %d | wq
 """"""""""""
 " Mappings "
 """"""""""""
+
+noremap tt :NERDTreeToggle<CR>
+noremap lt :set list!<CR>
 
 " Source vimrc
 nmap <silent> <Leader>sv :so $MYVIMRC<CR> :echo "Sourced" $MYVIMRC<CR>
