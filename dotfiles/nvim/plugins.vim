@@ -31,6 +31,7 @@ let g:NERDTreeStatusline = 0
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeAutoCenter = 1
 let g:NERDTreeAutoCenterThreshold = 9999
+let NERDTreeMapActivateNode='<space>'
 
 " Syntastic
 

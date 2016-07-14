@@ -1,4 +1,4 @@
-" Welcome to…
+" Welcom to…
 "
 " I N I T . V I M
 "
@@ -64,6 +64,7 @@ Plug 'guns/xterm-color-table.vim'
 Plug 'tpope/vim-surround'
 Plug 'wesQ3/vim-windowswap'
 Plug 'terryma/vim-smooth-scroll'
+Plug 'tpope/vim-fugitive'
 
 if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'tag': '*' }
@@ -107,6 +108,8 @@ set number
 set mouse=n " Mouse is for scrolling in normal mode only.
 set scrolloff=999 " Enable side-scroller editing.
 set statusline=%t
+set statusline+=\ 
+set statusline+=%{fugitive#statusline()}
 
 colorscheme later-this-evening
 

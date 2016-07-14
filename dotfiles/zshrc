@@ -216,3 +216,6 @@ is_available keychain && eval $(keychain --quiet --eval id_ed25519)
 
 name_tmux_window
 export PATH=/usr/local/heroku/bin:$PATH
+
+alias glog="git log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
