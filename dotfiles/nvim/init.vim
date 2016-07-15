@@ -88,7 +88,7 @@ set shortmess+=I
 set hidden
 
 " Much easier to reach.
-let mapleader=','
+let mapleader=';'
 
 " Detect filetypes.
 filetype on
@@ -171,8 +171,8 @@ command! Tq %d | wq
 " Mappings "
 """"""""""""
 
-noremap tt :NERDTreeToggle<CR>
-noremap lt :set list!<CR>
+noremap <Leader>nt :NERDTreeToggle<CR>
+noremap <Leader>lt :set list!<CR>
 
 " Source vimrc
 nmap <silent> <Leader>sv :so $MYVIMRC<CR> :echo "Sourced" $MYVIMRC<CR>
