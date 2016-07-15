@@ -1,19 +1,5 @@
 " Plugin configuration
 
-" Unite
-
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-
-autocmd FileType unite call s:unite_settings()
-
-function! s:unite_settings()
-    imap <buffer> <ESC> <Plug>(unite_exit)
-endfunction
-
-nnoremap <silent> <Leader>. :Unite -no-split -start-insert -auto-preview file_rec buffer:-<CR>
-nnoremap <silent> <Leader>, :Unite -no-split -start-insert -auto-preview buffer:-<CR>
-
 " deoplete
 
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"

@@ -54,12 +54,9 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle', 'tag': '*' }
 Plug 'embear/vim-localvimrc', { 'tag': '*' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Raimondi/delimitMate'
-Plug 'Shougo/unite.vim', { 'tag': '*' }
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/syntastic'
 Plug 'ap/vim-css-color'
-Plug 'PeterRincker/vim-argumentative'
-Plug 'tweekmonster/braceless.vim', { 'tag': '*' }
 Plug 'guns/xterm-color-table.vim'
 Plug 'tpope/vim-surround'
 Plug 'wesQ3/vim-windowswap'
@@ -68,7 +65,7 @@ Plug 'tpope/vim-fugitive'
 
 if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'tag': '*' }
-    let g:deoplete#enable_at_startup = 1
+    "let g:deoplete#enable_at_startup = 1
 endif
 
 " Syntax
@@ -109,7 +106,6 @@ set mouse=n " Mouse is for scrolling in normal mode only.
 set scrolloff=999 " Enable side-scroller editing.
 set statusline=%t
 set statusline+=\ 
-set statusline+=%{fugitive#statusline()}
 
 colorscheme later-this-evening
 
